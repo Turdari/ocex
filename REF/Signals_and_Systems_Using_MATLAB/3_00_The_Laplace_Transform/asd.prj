@@ -1,0 +1,73 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3906100223" file="/mnt/ALL/GIT_TURI/ocex/SRC/Signals_and_Systems_Using_MATLAB/3_00_The_Laplace_Transform/asd.prj" location="/mnt/ALL/GIT_TURI/ocex/SRC/Signals_and_Systems_Using_MATLAB/3_00_The_Laplace_Transform" name="asd" target="target.mlapps" target-name="Package App">
+    <param.appname>asd</param.appname>
+    <param.authnamewatermark>asd</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>asd</param.summary>
+    <param.description>asd</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Simulink</item>
+      <item>Symbolic Math Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>2</item>
+      <item>15</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.14</item>
+      <item>10.7</item>
+      <item>9.3</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>2b77ae56-3cde-4097-b14f-a3b2b31f70da</param.guid>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.screenshot />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/app1.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/app1.mlapp</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="/mnt/ALL/GIT_TURI/ocex/SRC/Signals_and_Systems_Using_MATLAB" name="3_00_The_Laplace_Transform" optional="false">/mnt/ALL/GIT_TURI/ocex/SRC/Signals_and_Systems_Using_MATLAB/3_00_The_Laplace_Transform</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/usr/local/MATLAB/R2023a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>false</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>true</linux>
+      <solaris>false</solaris>
+      <osver>5.15.0-69-generic</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>glnxa64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

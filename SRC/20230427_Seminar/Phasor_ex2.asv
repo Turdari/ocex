@@ -1,0 +1,91 @@
+%%
+% Example 0.3---Interactive graphing example
+%%
+clear all; clf
+
+wfi0 = [ exp(j*0); exp(j*0); exp(j*0)];
+wfi1 = [ exp(j*0); exp(j*2*pi/3); exp(-j*2*pi/3)];
+wfi2 = [ exp(j*0); exp(-j*2*pi/3); exp(j*2*pi/3)];
+
+% + 60 degree
+
+% - 60 degree
+
+
+% f=input(' frequency in Hz >> ')
+% A=input(' amplitude (>0) >> ')
+% theta=input(' phase in degrees >> ')
+
+% Can represent all in generic format
+% x(t) = A * e^{at}
+% x(t) = |A|e^{j \theta } * e ^ {\sigma + j\Omega}
+% this is just continuous form.
+f = 1 ;
+A = 1 ;
+t = 0 ;
+theta = 90 ;
+omega = 2*pi*f; % frequency rad/s
+
+z=A*exp(j*(omega*t+theta*pi/180));
+
+figure(1)
+%% A
+subplot(231)
+    wfi = wfi0
+    z1 = z * wfi(1)
+    z2 = z * wfi(2)
+    z3 = z * wfi(3)
+    x = real(z1);
+    y = imag(z1);
+    compass(x,y,'r'); % plot vector
+    hold on % hold current plot
+    x = real(z2);
+    y = imag(z2);
+    compass(x,y,'g'); % plot vector
+    hold on % hold current plot
+    x = real(z3);
+    y = imag(z3);
+    compass(x,y,'b'); % plot vector
+    hold off
+
+%% B
+subplot(232)
+    wfi = wfi1
+    z1 = z * wfi(1)
+    z2 = z * wfi(2)
+    z3 = z * wfi(3)
+    x = real(z1);
+    y = imag(z1);
+    compass(x,y,'r'); % plot vector
+    hold on % hold current plot
+    x = real(z2);
+    y = imag(z2);
+    compass(x,y,'g'); % plot vector
+    hold on % hold current plot
+    x = real(z3);
+    y = imag(z3);
+    compass(x,y,'b'); % plot vector
+    hold off
+%% C
+    subplot(233)
+    wfi = wfi2
+    z1 = z * wfi(1)
+    z2 = z * wfi(2)
+    z3 = z * wfi(3)
+    x = real(z1);
+    y = imag(z1);
+    compass(x,y,'r'); % plot vector
+    hold on % hold current plot
+    x = real(z2);
+    y = imag(z2);
+    compass(x,y,'g'); % plot vector
+    hold on % hold current plot
+    x = real(z3);
+    y = imag(z3);
+    compass(x,y,'b'); % plot vector
+    hold off
+%% 
+    subplot(2,3,)
+
+
+
